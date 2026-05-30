@@ -1,0 +1,29 @@
+{
+  "raw_path": "raw/raw.csv",
+  "preprocessed_path": "raw/raw_preprocessed.csv",
+  "signal_path": "signal.csv",
+  "sort_column": "fcnt",
+  "range_column": "fcnt",
+  "range_min": 780,
+  "range_max": 1050,
+  "required_columns": [
+    "fcnt",
+    "_time",
+    "T30B",
+    "depth_m_30B",
+    "speed_mps_30B"
+  ],
+  "keep_columns": [
+    "fcnt",
+    "_time",
+    "T30B",
+    "depth_m_30B",
+    "speed_mps_30B"
+  ],
+  "rename_columns": {"_time":"time",
+                    "fcnt":"index",
+                    "T30B":"dive-temperature",
+                    "depth_m_30B":"dive-depth",
+                    "speed_mps_30B":"dive-speed"
+                    }
+}
