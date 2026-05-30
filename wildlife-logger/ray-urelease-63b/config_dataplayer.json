@@ -1,12 +1,13 @@
 {
     "dataplayer": {
         "kind": "csv",
-        "path": "./signals/category-template/signal-template/signal.csv",
-        "data_mode": "time_linear",
-        "time_column": "rtc_timestamp",
-        "value_column": "atmo_mean_temp",
+        "path": "./signals/wildlife-logger/ray-urelease-63b/signal.csv",
+        "data_mode": "index",
+        "time_column": "time",
+        "value_column": "dive-depth",
         "secondary_columns": [
-          "atmo_mean_pres"
+          "dive-temperature",
+          "dive-speed"
         ],
         "normalization": "auto",
         "min_value": null,
