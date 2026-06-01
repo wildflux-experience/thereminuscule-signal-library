@@ -19,7 +19,6 @@ signal-name/
    |- plot.py <- A script to show data. Output are stored in assets/
    |- signal.csv <- The signal to be played with the Thereminuscule
    |- config_dataplayer.json <- The corresponding config info for the Dataplayer to be copied into the Thereminuscule config file
-   |- raw/ <- Raw data before processing and formating
    |- assets/ <- A folder to store additional files such as the output of the plot.py script
 ```
 

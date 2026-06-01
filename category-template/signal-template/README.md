@@ -1,15 +1,8 @@
 # Signal : `signal-template`
 
-## What is it ?
+An example signal containing atmospheric pressure and air temperature by an electronic device placed outside in the Reunion Island.
 
-Short description here ...
+The recording started on 2026-04-03 and spans approximately 65 hours.
 
-## How to use it ?
+*Source: WildFlux (Blackfish Creation) – 2026*
 
-Short description of main columns of interest
-
-See parameters.json for more info on important columns and time range
-
-See config_dataplayer.json to plug this signal into the thereminuscule engine.
-
-**More info on how to install signal in the main README.**

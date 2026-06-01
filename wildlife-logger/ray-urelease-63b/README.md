@@ -1,19 +1,7 @@
 # Signal : `ray-urelease-63b`
 
-## What is it ?
+15 days of diving profile data recorded from a pink whipray (*Pateobatis fai*) swimming off the coast of Saint-Gilles, Réunion Island.
 
-Enregistrement du profil de plongée d'une Raie (*Pateobatis Jai)* marquée au large de Saint-Gilles, La Réunion.
+The ray was tagged on 27 November 2025 using a *urelease* tag.
 
-La Raie à été marquée le 27/11/2025. La balise utilisée se nomme urealse-63b.
-
-L'enregistrement dure ~15 jours.
-
-## How to use it ?
-
-Short description of main columns of interest
-
-See parameters.json for more info on important columns and time range
-
-See config_dataplayer.json to plug this signal into the thereminuscule engine.
-
-**More info on how to install signal in the main README.**
+*Source : Ifremer DOI / LIRMM (CNRS - Université de Montpellier) - 2025*
