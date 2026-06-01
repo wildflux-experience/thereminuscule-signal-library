@@ -1,9 +1,10 @@
 ---
 import { readFileSync } from "node:fs";
+import { join } from "node:path";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
 const library = JSON.parse(
-  readFileSync(new URL("../../public/library.json", import.meta.url), "utf-8")
+  readFileSync(join(process.cwd(), "public", "library.json"), "utf-8")
 );
 const signals = library.signals;
 const base = import.meta.env.BASE_URL;

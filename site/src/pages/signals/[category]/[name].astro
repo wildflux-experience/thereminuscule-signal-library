@@ -1,18 +1,23 @@
 ---
 import { existsSync, readFileSync } from "node:fs";
+import { join } from "node:path";
 import SignalLayout from "../../../layouts/SignalLayout.astro";
 
 export function getStaticPaths() {
   const library = JSON.parse(
-    readFileSync(new URL("../../../../public/library.json", import.meta.url), "utf-8")
+    readFileSync(join(process.cwd(), "public", "library.json"), "utf-8")
   );
   return library.signals.map((signal) => {
-    const readmeUrl = new URL(
-      `../../../../public/signals/${signal.category}/${signal.name}/README.md`,
-      import.meta.url
+    const readmePath = join(
+      process.cwd(),
+      "public",
+      "signals",
+      signal.category,
+      signal.name,
+      "README.md"
     );
-    const readme = existsSync(readmeUrl)
-      ? readFileSync(readmeUrl, "utf-8").replace(/^# .*(\r?\n)+/, "").trim()
+    const readme = existsSync(readmePath)
+      ? readFileSync(readmePath, "utf-8").replace(/^# .*(\r?\n)+/, "").trim()
       : "";
 
     return {
