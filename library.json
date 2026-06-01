@@ -1,0 +1,83 @@
+{
+  "generated_at": "2026-06-01T09:53:24.599960+00:00",
+  "signals": [
+    {
+      "name": "dcp-urelease-016",
+      "category": "wildlife-logger",
+      "duration": 518400.0,
+      "nb_rows": 1706,
+      "tags": [
+        "scientific",
+        "marine",
+        "fishery",
+        "réunion"
+      ],
+      "recommended_playbackrate": 607.7373974208675
+    },
+    {
+      "name": "dcp-urelease-017",
+      "category": "wildlife-logger",
+      "duration": 864000.0,
+      "nb_rows": 2057,
+      "tags": [
+        "scientific",
+        "marine",
+        "fishery",
+        "réunion"
+      ],
+      "recommended_playbackrate": 840.0583373845406
+    },
+    {
+      "name": "dcp-urelease-018",
+      "category": "wildlife-logger",
+      "duration": 1555200.0,
+      "nb_rows": 3004,
+      "tags": [
+        "scientific",
+        "marine",
+        "fishery",
+        "réunion"
+      ],
+      "recommended_playbackrate": 1035.4194407456725
+    },
+    {
+      "name": "ray-urelease-63b",
+      "category": "wildlife-logger",
+      "duration": null,
+      "nb_rows": 992,
+      "tags": [
+        "scientific",
+        "marine",
+        "wildlife",
+        "réunion"
+      ],
+      "recommended_playbackrate": 3.3066666666666666
+    },
+    {
+      "name": "turtle-iot-046",
+      "category": "wildlife-logger",
+      "duration": 505500.0,
+      "nb_rows": 8097,
+      "tags": [
+        "scientific",
+        "marine",
+        "wildlife",
+        "réunion"
+      ],
+      "recommended_playbackrate": 124.86105965172285
+    },
+    {
+      "name": "turtle-iot-048",
+      "category": "wildlife-logger",
+      "duration": 1399800.0,
+      "nb_rows": 14187,
+      "tags": [
+        "scientific",
+        "marine",
+        "wildlife",
+        "réunion"
+      ],
+      "recommended_playbackrate": 197.3355889194333
+    }
+  ]
+}

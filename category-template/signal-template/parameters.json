@@ -8,9 +8,7 @@
   "range_max": null,
   "row_filters": {},
   "required_columns": [
-    "rtc_timestamp",
-    "atmo_mean_temp",
-    "atmo_mean_pres"
+    "rtc_timestamp"
   ],
   "keep_columns": [
     "rtc_timestamp",
