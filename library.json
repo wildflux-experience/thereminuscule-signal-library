@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-01T11:57:49.746401+00:00",
+  "generated_at": "2026-06-01T13:17:58.282797+00:00",
   "signals": [
     {
       "name": "signal-template",
-      "category": "category-template",
+      "category": "biology",
       "duration": null,
       "nb_rows": 1000,
       "tags": [
@@ -11,6 +11,19 @@
         "réunion"
       ],
       "recommended_playbackrate": 3.3333333333333335
+    },
+    {
+      "name": "bathy-plancha-boucan",
+      "category": "topography",
+      "duration": null,
+      "nb_rows": 6925,
+      "tags": [
+        "scientific",
+        "marine",
+        "bathymetry",
+        "reunion"
+      ],
+      "recommended_playbackrate": 23.083333333333332
     },
     {
       "name": "dcp-urelease-016",

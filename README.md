@@ -1,8 +1,11 @@
 # Thereminuscule Signal Library
 
-> Go to [this page(https://wildflux-experience.github.io/thereminuscule-signal-library/)] to navigate in the library !
 
 A library of signal to be played with the [Thereminuscule](https://github.com/wildflux-experience/thereminuscule-engine)'s Dataplayer component. Data comes from real world measurements.
+
+Go to [this page](https://wildflux-experience.github.io/thereminuscule-signal-library/) to navigate into the library !
+
+---
 
 These signals typically are time-serie or ordered records that relates to physical variables or events.
 
