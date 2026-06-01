@@ -84,8 +84,8 @@ for parameters_path in sorted(root.glob("*/*/parameters.json")):
     category = category_folder.name
     name = signal_folder.name
 
-    if "template" in category or "template" in name:
-        continue
+    # if "template" in category or "template" in name:
+    #     continue
 
     with open(parameters_path, encoding="utf-8") as file:
         params = json.load(file)

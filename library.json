@@ -1,6 +1,17 @@
 {
-  "generated_at": "2026-06-01T09:53:24.599960+00:00",
+  "generated_at": "2026-06-01T11:57:49.746401+00:00",
   "signals": [
+    {
+      "name": "signal-template",
+      "category": "category-template",
+      "duration": null,
+      "nb_rows": 1000,
+      "tags": [
+        "example",
+        "réunion"
+      ],
+      "recommended_playbackrate": 3.3333333333333335
+    },
     {
       "name": "dcp-urelease-016",
       "category": "wildlife-logger",

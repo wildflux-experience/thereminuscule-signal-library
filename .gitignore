@@ -15,3 +15,9 @@ env/
 tmp/
 
 */*/raw/
+
+site/node_modules/
+site/dist/
+site/.astro/
+site/public/library.json
+site/public/signals/
