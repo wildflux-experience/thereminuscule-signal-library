@@ -1,0 +1,49 @@
+---
+import "../styles/global.css";
+
+const {
+  signal,
+  title = signal?.name ?? "Signal",
+  subtitle = "",
+  logo = "",
+  logoHeight = "1em",
+} = Astro.props;
+
+
+const base = import.meta.env.BASE_URL;
+const withBase = (path) => `${base.replace(/\/?$/, "/")}${path.replace(/^\/+/, "")}`;
+const assetBase = `signals/${signal.category}/${signal.name}`;
+const duration = signal.duration == null ? "indexed data" : `${Math.round(signal.duration)} seconds`;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <main class="home">
+      <header class="site-heading">
+        <div class="title-row">
+          <h1>{title}</h1>
+        </div>
+        <div class="subtitle">
+          <p>{signal.category} | {signal.tags.join(" · ")} | {duration} | {signal.nb_rows ?? "Unknown"} rows</p>
+        </div>
+        <div class="subtitle">
+          <p><a href={withBase("/")}> >>> Back to library</a></p>
+        </div>
+      </header>
+      <slot />
+    </main>
+    <footer class="fixed-footer">
+      WildFlux 2026 - Contact :
+      <a href="mailto:blackfish.creation@proton.me">blackfish.creation@proton.me</a>
+      - GitHub :
+      <a href="https://github.com/wildflux-experience/thereminuscule-signal-library/">
+        wildflux-experience/thereminuscule-signal-library
+      </a>
+    </footer>
+  </body>
+</html>

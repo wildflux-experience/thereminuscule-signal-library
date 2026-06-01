@@ -1,0 +1,70 @@
+---
+import { existsSync, readFileSync } from "node:fs";
+import SignalLayout from "../../../layouts/SignalLayout.astro";
+
+export function getStaticPaths() {
+  const library = JSON.parse(
+    readFileSync(new URL("../../../../public/library.json", import.meta.url), "utf-8")
+  );
+  return library.signals.map((signal) => {
+    const readmeUrl = new URL(
+      `../../../../public/signals/${signal.category}/${signal.name}/README.md`,
+      import.meta.url
+    );
+    const readme = existsSync(readmeUrl)
+      ? readFileSync(readmeUrl, "utf-8").replace(/^# .*(\r?\n)+/, "").trim()
+      : "";
+
+    return {
+      params: {
+        category: signal.category,
+        name: signal.name,
+      },
+      props: { signal, readme },
+    };
+  });
+}
+
+const { signal, readme } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const withBase = (path) => `${base.replace(/\/?$/, "/")}${path.replace(/^\/+/, "")}`;
+const assetBase = `signals/${signal.category}/${signal.name}`;
+const duration = signal.duration == null ? "indexed data" : `${Math.round(signal.duration)} seconds`;
+const githubBase = `https://github.com/wildflux-experience/thereminuscule-signal-library/tree/main/${signal.category}/${signal.name}`;
+const githubBlobBase = `https://github.com/wildflux-experience/thereminuscule-signal-library/blob/main/${signal.category}/${signal.name}`;
+---
+
+<SignalLayout
+  signal={signal}
+  title={signal.name}
+>
+
+  {readme && <pre class="markdown-card">{readme}</pre>}
+  <nav class="text">
+    <a href={githubBase}>🠶 Download signal on GitHub</a>
+  </nav>
+
+  <div class="embed">
+    <iframe
+      src={withBase(`${assetBase}/plot.html`)}
+      title={`${signal.name} plot`}
+      width="100%"
+      height="750"
+    ></iframe>
+  </div>
+
+  <div class="embed">
+    <iframe
+      src={withBase(`${assetBase}/report.html`)}
+      title={`${signal.name} report`}
+      width="100%"
+      height="500"
+    ></iframe>
+  </div>
+
+  <p><a href={withBase("/")}> >>> Back to library</a></p>
+
+  <footer class="site-footer">
+
+  </footer>
+</SignalLayout>

@@ -1,0 +1,37 @@
+---
+import "../styles/global.css";
+
+const {
+  title = "Thereminuscule Signal Library",
+  subtitle = "A library of signal to be played with the Thereminuscule's Dataplayer component. Data comes from real world measurements.",
+  logo = "logo/wildflux-logo-1.png",
+} = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <main class="home">
+      <header class="site-heading">
+        <div class="title-row">
+          {logo && <img class="site-logo" src={logo} alt="" />}
+          <h1>{title}</h1>
+        </div>
+        {subtitle && <p class="subtitle">{subtitle}</p>}
+      </header>
+      <slot />
+    </main>
+    <footer class="fixed-footer">
+      WildFlux 2026 - Contact :
+      <a href="mailto:blackfish.creation@proton.me">blackfish.creation@proton.me</a>
+      - GitHub :
+      <a href="https://github.com/wildflux-experience/thereminuscule-signal-library/">
+        wildflux-experience/thereminuscule-signal-library
+      </a>
+    </footer>
+  </body>
+</html>

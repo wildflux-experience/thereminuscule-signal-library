@@ -1,0 +1,46 @@
+---
+import { readFileSync } from "node:fs";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const library = JSON.parse(
+  readFileSync(new URL("../../public/library.json", import.meta.url), "utf-8")
+);
+const signals = library.signals;
+const base = import.meta.env.BASE_URL;
+const withBase = (path) => `${base.replace(/\/?$/, "/")}${path.replace(/^\/+/, "")}`;
+const suptitle = "A library of signal to be played with the Dataplayer component. Data comes from real world measurements.";
+const categories = Object.entries(
+  signals.reduce((groups, signal) => {
+    groups[signal.category] = groups[signal.category] || [];
+    groups[signal.category].push(signal);
+    return groups;
+  }, {})
+);
+      
+---
+
+<BaseLayout>
+
+  <section class="category-panels" aria-label="Signal categories">
+    {
+      categories.map(([category, categorySignals]) => (
+        <section class="category-panel">
+          <header class="category-panel-heading">
+            <h2>{category}</h2>
+            <p>{categorySignals.length} signals</p>
+          </header>
+
+          <nav class="signal-list" aria-label={`${category} signals`}>
+            {categorySignals.map((signal) => (
+              <a class="signal-link" href={withBase(`signals/${signal.category}/${signal.name}/`)}>
+                <span>{signal.name}</span>
+                <small>{signal.tags.join(" · ")}</small>
+              </a>
+            ))}
+          </nav>
+        </section>
+      ))
+    }
+  </section>
+
+</BaseLayout>

@@ -1,0 +1,14 @@
+{
+  "name": "thereminuscule-signal-library-site",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "prebuild": "node scripts/copy-signal-assets.mjs",
+    "build": "astro build",
+    "predev": "node scripts/copy-signal-assets.mjs",
+    "dev": "astro dev"
+  },
+  "dependencies": {
+    "astro": "latest"
+  }
+}
