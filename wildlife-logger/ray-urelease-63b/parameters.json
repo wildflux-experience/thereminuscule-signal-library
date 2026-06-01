@@ -1,5 +1,5 @@
 {
-  "raw_path": "raw/raw.csv",
+  "raw_path": "../../_raw/RAW_ray-urelease-63b.csv",
   "preprocessed_path": "raw/raw_preprocessed.csv",
   "signal_path": "signal.csv",
   "sort_column": "fcnt",
