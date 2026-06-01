@@ -1,17 +1,16 @@
 {
     "dataplayer": {
         "kind": "csv",
-        "path": "./signals/wildlife-logger/dcp-urelease-016/signal.csv",
+        "path": "./signals/wildlife-logger/turtle-iot-048/signal.csv",
         "data_mode": "time_linear",
         "time_column": "time",
-        "value_column": "mean-displacement",
+        "value_column": "dive-depth",
         "secondary_columns": [
-          "atmospheric-temperature",
-          "atmospheric-pressure",
-          "latitude",
-          "longitude",
-          "mean-displacement",
-          "speed"
+          "water-temperature",
+          "dive-depth",
+          "dive-max-depth",
+          "dive-mean-depth",
+          "dive-duration"
         ],
         "normalization": "auto",
         "min_value": null,
@@ -19,10 +18,10 @@
         "loop": false,
         "hold_last": false,
         "tick_stride": 1,
-        "playback_rate": 800.0,
+        "playback_rate": 120.0,
         "resample_period_s": 10.0,
         "started": true,
         "reload_on_change": true,
-        "reload_token": 0
+        "reload_token": 2
       }
 }
