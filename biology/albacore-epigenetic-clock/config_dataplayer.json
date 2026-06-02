@@ -1,0 +1,30 @@
+{
+    "dataplayer": {
+        "kind": "csv",
+        "path": "./signals/biology/albacore-epigenetic-clock/signal.csv",
+        "data_mode": "index",
+        "time_column": null,
+        "value_column": "fish-a1-002",
+        "secondary_columns": [
+          "fish-a1-002",
+          "fish-a2-029",
+          "fish-b1-158",
+          "fish-b2-171",
+          "fish-c1-008",
+          "fish-c2-018",
+          "larvae-18BG",
+          "larvae-23BGD"
+        ],
+        "normalization": "auto",
+        "min_value": null,
+        "max_value": null,
+        "loop": true,
+        "hold_last": false,
+        "tick_stride": 1,
+        "playback_rate": 500.0,
+        "resample_period_s": 10.0,
+        "started": true,
+        "reload_on_change": true,
+        "reload_token": 2
+      }
+}

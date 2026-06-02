@@ -1,0 +1,29 @@
+{
+    "dataplayer": {
+        "kind": "csv",
+        "path": "./signals/elements/bathy-plancha-saint-brandon/signal.csv",
+        "data_mode": "time_linear",
+        "time_column": "time",
+        "value_column": "seafloor-depth",
+        "secondary_columns": [
+            "seafloor-depth",
+            "latitude",
+            "longitude",
+            "vehicle-attitude",
+            "vehicle-roll",
+            "vehicle-pitch",
+            "vehicle-yaw"
+        ],
+        "normalization": "auto",
+        "min_value": null,
+        "max_value": null,
+        "loop": true,
+        "hold_last": false,
+        "tick_stride": 1,
+        "playback_rate": 500.0,
+        "resample_period_s": 10.0,
+        "started": true,
+        "reload_on_change": true,
+        "reload_token": 2
+      }
+}

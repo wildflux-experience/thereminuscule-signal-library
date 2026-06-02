@@ -1,0 +1,27 @@
+{
+    "dataplayer": {
+        "kind": "csv",
+        "path": "./signals/wildlife-logger/turtle-iot-046/signal.csv",
+        "data_mode": "time_linear",
+        "time_column": "time",
+        "value_column": "dive-depth",
+        "secondary_columns": [
+          "water-temperature",
+          "dive-depth",
+          "dive-max-depth",
+          "dive-mean-depth",
+          "dive-duration"
+        ],
+        "normalization": "auto",
+        "min_value": null,
+        "max_value": null,
+        "loop": false,
+        "hold_last": false,
+        "tick_stride": 1,
+        "playback_rate": 120.0,
+        "resample_period_s": 10.0,
+        "started": true,
+        "reload_on_change": true,
+        "reload_token": 2
+      }
+}

@@ -1,0 +1,26 @@
+{
+  "raw_path": "../../_raw/RAW_dcp-urelease*.csv",
+  "preprocessed_path": "raw/raw_preprocessed.csv",
+  "signal_path": "signal.csv",
+  "sort_column": "_time",
+  "range_column": "_time",
+  "range_min": "2024-09-23T23:59:00Z",
+  "range_max": "2024-10-03T23:59:00Z",
+  "row_filters": {
+    "deveui": "3932303178308B05"
+  },
+  "required_columns": [
+    "_time"
+  ],
+  "keep_columns": [
+    "_time",
+    "pressure_bar",
+    "temperature_deg",
+    "latitude",
+    "longitude"
+  ],
+  "rename_columns": {"_time":"time",
+                    "temperature_deg":"atmospheric-temperature",
+                    "pressure_bar":"atmospheric-pressure"
+                    }
+}

@@ -1,0 +1,32 @@
+{
+  "raw_path": "../../_raw/RAW_albacore-epigenetic-clock_meth_matrix.csv",
+  "preprocessed_path": "raw_preprocessed.csv",
+  "signal_path": "signal.csv",
+  "sort_column": "index",
+  "range_column": null,
+  "range_min": null,
+  "range_max": null,
+  "row_filters": {},
+  "required_columns": ["index"],
+  "keep_columns": [
+    "index",
+    "A1.002",
+    "A2.029",
+    "B1.158",
+    "B2.171",
+    "C1.008",
+    "C2.018",
+    "T.ala.18BG.534.1",
+    "T.alba.23BGD.123.1"
+  ],
+  "rename_columns": {
+    "A1.002":"fish-a1-002",
+    "A2.029":"fish-a2-029",
+    "B1.158":"fish-b1-158",
+    "B2.171":"fish-b2-171",
+    "C1.008":"fish-c1-008",
+    "C2.018":"fish-c2-018",
+    "T.ala.18BG.534.1":"larvae-18BG",
+    "T.alba.23BGD.123.1":"larvae-23BGD"
+  }
+}
