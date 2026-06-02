@@ -1,33 +1,61 @@
 {
-  "generated_at": "2026-06-01T13:17:58.282797+00:00",
+  "generated_at": "2026-06-02T15:48:48.600267+00:00",
   "signals": [
     {
-      "name": "signal-template",
+      "name": "albacore-epigenetic-clock",
       "category": "biology",
       "duration": null,
-      "nb_rows": 1000,
+      "nb_rows": 7637,
       "tags": [
-        "example",
-        "réunion"
+        "scientific",
+        "marine",
+        "genetic",
+        "indian ocean"
       ],
-      "recommended_playbackrate": 3.3333333333333335
+      "recommended_playbackrate": 25.456666666666667
     },
     {
       "name": "bathy-plancha-boucan",
-      "category": "topography",
+      "category": "elements",
       "duration": null,
       "nb_rows": 6925,
       "tags": [
         "scientific",
         "marine",
         "bathymetry",
-        "reunion"
+        "réunion"
       ],
       "recommended_playbackrate": 23.083333333333332
     },
     {
+      "name": "bathy-plancha-passe-dubois",
+      "category": "elements",
+      "duration": null,
+      "nb_rows": 10462,
+      "tags": [
+        "scientific",
+        "marine",
+        "bathymetry",
+        "seychelles"
+      ],
+      "recommended_playbackrate": 34.873333333333335
+    },
+    {
+      "name": "bathy-plancha-saint-brandon",
+      "category": "elements",
+      "duration": null,
+      "nb_rows": 33887,
+      "tags": [
+        "scientific",
+        "marine",
+        "bathymetry",
+        "réunion"
+      ],
+      "recommended_playbackrate": 112.95666666666666
+    },
+    {
       "name": "dcp-urelease-016",
-      "category": "wildlife-logger",
+      "category": "wildlife",
       "duration": 518400.0,
       "nb_rows": 1706,
       "tags": [
@@ -40,7 +68,7 @@
     },
     {
       "name": "dcp-urelease-017",
-      "category": "wildlife-logger",
+      "category": "wildlife",
       "duration": 864000.0,
       "nb_rows": 2057,
       "tags": [
@@ -53,7 +81,7 @@
     },
     {
       "name": "dcp-urelease-018",
-      "category": "wildlife-logger",
+      "category": "wildlife",
       "duration": 1555200.0,
       "nb_rows": 3004,
       "tags": [
@@ -66,7 +94,7 @@
     },
     {
       "name": "ray-urelease-63b",
-      "category": "wildlife-logger",
+      "category": "wildlife",
       "duration": null,
       "nb_rows": 992,
       "tags": [
@@ -79,7 +107,7 @@
     },
     {
       "name": "turtle-iot-046",
-      "category": "wildlife-logger",
+      "category": "wildlife",
       "duration": 505500.0,
       "nb_rows": 8097,
       "tags": [
@@ -92,7 +120,7 @@
     },
     {
       "name": "turtle-iot-048",
-      "category": "wildlife-logger",
+      "category": "wildlife",
       "duration": 1399800.0,
       "nb_rows": 14187,
       "tags": [
