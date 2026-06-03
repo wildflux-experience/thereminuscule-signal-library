@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-03T07:02:47.038445+00:00",
+  "generated_at": "2026-06-03T09:12:50.984478+00:00",
   "signals": [
     {
       "name": "albacore-epigenetic-clock",
@@ -76,6 +76,66 @@
         "mauritius"
       ],
       "recommended_playbackrate": 112.95666666666666
+    },
+    {
+      "name": "ephemeris-mars-year2026",
+      "category": "space",
+      "duration": null,
+      "nb_rows": 2913,
+      "tags": [
+        "scientific",
+        "celestial bodies",
+        "universe"
+      ],
+      "recommended_playbackrate": 9.71
+    },
+    {
+      "name": "ephemeris-moon-year2026",
+      "category": "space",
+      "duration": null,
+      "nb_rows": 2913,
+      "tags": [
+        "scientific",
+        "celestial bodies",
+        "universe"
+      ],
+      "recommended_playbackrate": 9.71
+    },
+    {
+      "name": "ephemeris-pluto-year2026",
+      "category": "space",
+      "duration": null,
+      "nb_rows": 2913,
+      "tags": [
+        "scientific",
+        "celestial bodies",
+        "universe"
+      ],
+      "recommended_playbackrate": 9.71
+    },
+    {
+      "name": "ephemeris-sun-year2026",
+      "category": "space",
+      "duration": null,
+      "nb_rows": 2913,
+      "tags": [
+        "scientific",
+        "celestial bodies",
+        "universe"
+      ],
+      "recommended_playbackrate": 9.71
+    },
+    {
+      "name": "ephemeris-venus-year2026",
+      "category": "space",
+      "duration": null,
+      "nb_rows": 2913,
+      "tags": [
+        "scientific",
+        "celestial bodies",
+        "universe"
+      ],
+      "recommended_playbackrate": 9.71
     },
     {
       "name": "dcp-urelease-016",
