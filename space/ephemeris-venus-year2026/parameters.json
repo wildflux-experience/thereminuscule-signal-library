@@ -1,0 +1,31 @@
+{
+  "raw_path": "../../_raw/RAW_ephemeris_venus_geocentric_year_2026.txt",
+  "preprocessed_path": "raw/raw_preprocessed.csv",
+  "signal_path": "signal.csv",
+  "sort_column": "Date__(UT)__HR:MN",
+  "range_column": "Date__(UT)__HR:MN",
+  "range_min": null,
+  "range_max": null,
+  "row_filters": {},
+  "required_columns": [
+    "Date__(UT)__HR:MN"
+  ],
+  "keep_columns": [
+    "Date__(UT)__HR:MN",
+    "APmag",
+    "S-brt",
+    "delta",
+    "S-O-T /r",
+    "Sky_motion",
+    "Sky_mot_PA"
+  ],
+  "rename_columns": {
+    "Date__(UT)__HR:MN":"time",
+    "APmag":"apparent-magnitude",
+    "S-brt":"surface brightness",
+    "delta":"distance-from-observer",
+    "S-O-T /r":"solar-elongation",
+    "Sky_motion":"sky-motion-speed",
+    "Sky_mot_PA":"sky-motion-position"
+  }
+}
