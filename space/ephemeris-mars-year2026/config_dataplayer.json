@@ -1,0 +1,28 @@
+{
+    "dataplayer": {
+        "kind": "csv",
+        "path": "./signals/space/ephemeris-mars-year2026/signal.csv",
+        "data_mode": "time_linear",
+        "time_column": "time",
+        "value_column": "sky-motion-position",
+        "secondary_columns": [
+          "apparent-magnitude",
+          "surface brightness",
+          "distance-from-observer",
+          "solar-elongation",
+          "sky-motion-speed",
+          "sky-motion-position"
+        ],
+        "normalization": "auto",
+        "min_value": null,
+        "max_value": null,
+        "loop": false,
+        "hold_last": false,
+        "tick_stride": 1,
+        "playback_rate": 21600,
+        "resample_period_s": 60.0,
+        "started": true,
+        "reload_on_change": true,
+        "reload_token": 0
+      }
+}
