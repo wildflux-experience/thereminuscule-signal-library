@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-02T15:48:48.600267+00:00",
+  "generated_at": "2026-06-03T07:02:47.038445+00:00",
   "signals": [
     {
       "name": "albacore-epigenetic-clock",
@@ -13,6 +13,30 @@
         "indian ocean"
       ],
       "recommended_playbackrate": 25.456666666666667
+    },
+    {
+      "name": "saline-solution-bioimpedance-131khz",
+      "category": "biology",
+      "duration": null,
+      "nb_rows": 4097,
+      "tags": [
+        "scientific",
+        "laboratory",
+        "chemical"
+      ],
+      "recommended_playbackrate": 13.656666666666666
+    },
+    {
+      "name": "saline-solution-bioimpedance-1khz",
+      "category": "biology",
+      "duration": null,
+      "nb_rows": 4097,
+      "tags": [
+        "scientific",
+        "laboratory",
+        "chemical"
+      ],
+      "recommended_playbackrate": 13.656666666666666
     },
     {
       "name": "bathy-plancha-boucan",
@@ -49,7 +73,7 @@
         "scientific",
         "marine",
         "bathymetry",
-        "réunion"
+        "mauritius"
       ],
       "recommended_playbackrate": 112.95666666666666
     },

@@ -1,0 +1,26 @@
+{
+  "raw_path": "../../_raw/RAW_saline-solution-bioimpedance/data.csv",
+  "preprocessed_path": "raw/raw_preprocessed.csv",
+  "signal_path": "signal.csv",
+  "sort_column": "index",
+  "range_column": null,
+  "range_min": null,
+  "range_max": null,
+  "row_filters": {},
+  "required_columns": [
+    "index"
+  ],
+  "keep_columns": [
+    "index",
+    "salt-9gpl-freq-131khz",
+    "salt-13gpl-freq-131khz",
+    "salt-17gpl-freq-131khz",
+    "salt-21gpl-freq-131khz",
+    "salt-24gpl-freq-131khz",
+    "salt-28gpl-freq-131khz",
+    "salt-32gpl-freq-131khz",
+    "salt-36gpl-freq-131khz",
+    "salt-40gpl-freq-131khz"
+  ],
+  "rename_columns": {}
+}

@@ -1,0 +1,31 @@
+{
+    "dataplayer": {
+        "kind": "csv",
+        "path": "./signals/biology/saline-solution-bioimpedance-1khz/signal.csv",
+        "data_mode": "index",
+        "time_column": null,
+        "value_column": "salt-9gpl-freq-1khz",
+        "secondary_columns": [
+          "salt-9gpl-freq-1khz",
+          "salt-13gpl-freq-1khz",
+          "salt-17gpl-freq-1khz",
+          "salt-21gpl-freq-1khz",
+          "salt-24gpl-freq-1khz",
+          "salt-28gpl-freq-1khz",
+          "salt-32gpl-freq-1khz",
+          "salt-36gpl-freq-1khz",
+          "salt-40gpl-freq-1khz"
+        ],
+        "normalization": "auto",
+        "min_value": null,
+        "max_value": null,
+        "loop": false,
+        "hold_last": false,
+        "tick_stride": 1,
+        "playback_rate": 1.0,
+        "resample_period_s": 1.0,
+        "started": true,
+        "reload_on_change": true,
+        "reload_token": 0
+      }
+}
