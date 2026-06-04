@@ -1,9 +1,9 @@
 {
     "dataplayer": {
         "kind": "csv",
-        "path": "./signals/wildlife-logger/ray-urelease-63b/signal.csv",
-        "data_mode": "index",
-        "time_column": "time",
+        "path": "./signals/wildlife/ray-urelease-63b/signal.csv",
+        "data_mode": "indexed",
+        "time_column": null,
         "value_column": "dive-depth",
         "secondary_columns": [
           "dive-temperature",

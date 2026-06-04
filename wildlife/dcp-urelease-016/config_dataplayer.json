@@ -1,7 +1,7 @@
 {
     "dataplayer": {
         "kind": "csv",
-        "path": "./signals/wildlife-logger/dcp-urelease-016/signal.csv",
+        "path": "./signals/wildlife/dcp-urelease-016/signal.csv",
         "data_mode": "time_linear",
         "time_column": "time",
         "value_column": "mean-displacement",
